@@ -5,12 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.13.4",
+    "forever": "^0.15.1",
     "request": "^2.69.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "./node_modules/forever/bin/forever ./index.js"
+    "start": "./node_modules/forever/bin/forever ./index.js"
   },
   "repository": {
     "type": "git",
