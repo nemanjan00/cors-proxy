@@ -1,0 +1,29 @@
+{
+  "name": "cors-proxy",
+  "version": "1.0.0",
+  "description": "CORS Proxy",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "./node_modules/forever/bin/forever ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemanjan00/cors-proxy.git"
+  },
+  "keywords": [
+    "CORS",
+    "proxy"
+  ],
+  "author": "Nemanja Nedeljković <nemanjan00@gmail.com> (https://nemanja.top/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nemanjan00/cors-proxy/issues"
+  },
+  "homepage": "https://github.com/nemanjan00/cors-proxy#readme"
+}
