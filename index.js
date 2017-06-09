@@ -13,7 +13,10 @@ app.use('/', function(req, res) {
 	var url = req.url.substr(1);
 
 	try {
-		var stream = request(url);
+		var stream = request({
+			followAllRedirects: true,
+			url: url
+		});
 
 		stream
 			.on('error', function(err) {
