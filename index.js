@@ -15,7 +15,11 @@ app.use(function(req, res, next) {
 app.use('/', function(req, res) {
 	var url = req.url.substr(1);
 
+	delete req.headers["if-modified-since"]
+	delete req.headers["if-none-match"];
 	delete req.headers.host;
+
+	console.log(req.headers);
 
 	let options = {
 		headers: req.headers,
