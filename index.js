@@ -19,9 +19,8 @@ app.use('/', function(req, res) {
 	delete req.headers["if-none-match"];
 	delete req.headers.host;
 
-	console.log(req.headers);
-
 	let options = {
+		encoding: null,
 		headers: req.headers,
 		followAllRedirects: true,
 		url: url
@@ -43,7 +42,7 @@ app.use('/', function(req, res) {
 				}
 			});
 
-			res.send(body);
+			res.send(response.body);
 		});
 	} catch (e) {
 		res.send("Error");
