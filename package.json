@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "express": "^4.19.2",
     "forever": "^0.15.1",
     "request": "^2.87.0"
   },
